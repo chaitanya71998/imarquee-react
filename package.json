@@ -1,10 +1,12 @@
 {
   "name": "react",
+  "homepage": "https://chaitanya71998.github.io/imarquee-react/",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
   "main": "src/index.tsx",
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-easy-marquee": "1.2.4"
@@ -17,6 +19,8 @@
     "vite": "^5.0.11"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
